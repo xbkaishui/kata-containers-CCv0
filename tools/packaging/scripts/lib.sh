@@ -6,7 +6,7 @@
 #
 
 export GOPATH=${GOPATH:-${HOME}/go}
-export tests_repo="${tests_repo:-github.com/kata-containers/tests}"
+export tests_repo="${tests_repo:-gitee.com/xbkaishui/tests}"
 export tests_repo_dir="$GOPATH/src/$tests_repo"
 export CC_BUILDER_REGISTRY="quay.io/kata-containers/cc-builders"
 export PUSH_TO_REGISTRY="${PUSH_TO_REGISTRY:-"no"}"
