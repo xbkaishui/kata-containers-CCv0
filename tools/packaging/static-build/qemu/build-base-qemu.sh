@@ -54,6 +54,8 @@ sudo docker pull ${container_image} || \
 sudo "${container_engine}" run \
 	--rm \
 	-i \
+	--env https_proxy="http://192.168.99.8:1085" \
+	--env http_proxy="http://192.168.99.8:1085" \
 	--env BUILD_SUFFIX="${build_suffix}" \
 	--env HYPERVISOR_NAME="${HYPERVISOR_NAME}" \
 	--env PKGVERSION="${PKGVERSION}" \

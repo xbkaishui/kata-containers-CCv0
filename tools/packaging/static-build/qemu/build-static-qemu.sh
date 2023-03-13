@@ -26,4 +26,4 @@ fi
 [ -n "$qemu_version" ] || qemu_version=$(get_from_kata_deps "assets.hypervisor.qemu.version")
 [ -n "$qemu_version" ] || die "failed to get qemu version"
 
-"${script_dir}/build-base-qemu.sh" "${qemu_repo}" "${qemu_version}" "" "kata-static-qemu.tar.gz"
+sh -x "${script_dir}/build-base-qemu.sh" "${qemu_repo}" "${qemu_version}" "" "kata-static-qemu.tar.gz"

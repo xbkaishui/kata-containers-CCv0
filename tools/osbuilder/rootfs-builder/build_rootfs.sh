@@ -1,0 +1,1 @@
+script -fec 'sudo -E AGENT_INIT=yes USE_DOCKER=true proxychains sh -x ./rootfs.sh ubuntu'
